@@ -13,7 +13,7 @@ export default function Navbar() {
     <>
       <PanelContext.Provider value={{ openPanel, setOpenPanel }}>
         <AppBar position="sticky" className="!block !bg-white !shadow-none">
-          <Toolbar className="justify-between max-w-[90rem] mx-auto text-GrayishBlue font-medium">
+          <Toolbar className="justify-between max-w-[90rem] mx-auto text-GrayishBlue font-bold">
             <img src={nav_logo} alt="logo" />
             <div className="flex space-x-[2rem] items-center">
               <Stack direction="row" spacing="2rem" component="ul">

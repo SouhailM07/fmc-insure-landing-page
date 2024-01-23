@@ -1,3 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   font-size: 13.5px;
+}
+
+body {
+  font-family: "karla" !important;
+}
+.heading {
+  @apply font-bold;
+  font-family: "DM Serif Display" !important;
+}
+
+* {
+  transition: 0.3s;
 }

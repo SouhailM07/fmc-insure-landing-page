@@ -3,3 +3,7 @@
 @tailwind utilities;
 @layer components {
 }
+
+#s2 {
+  background-position: 105% -12rem;
+}
