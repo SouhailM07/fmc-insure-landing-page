@@ -25,7 +25,7 @@ export default function Navbar() {
                   );
                 })}
               </Stack>
-              <button className="border-2 border-VeryDarkViolet text-VeryDarkViolet uppercase px-[2rem] py-[0.7rem]">
+              <button className="border-2 border-VeryDarkViolet text-VeryDarkViolet uppercase px-[2rem] py-[0.5rem]">
                 VIEW PLANS
               </button>
             </div>
