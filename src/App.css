@@ -13,7 +13,9 @@ body {
   @apply font-bold;
   font-family: "DM Serif Display" !important;
 }
-
+ul li {
+  @apply cursor-pointer;
+}
 * {
   transition: 0.3s;
 }

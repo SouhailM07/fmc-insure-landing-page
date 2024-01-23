@@ -2,7 +2,7 @@ import "./mycontainer.css";
 // mui
 import { Container } from "@mui/material";
 // components
-import { Navbar, Section1, Section2 } from "../../components";
+import { Navbar, Section1, Section2, Footer } from "../../components";
 
 export default function MyContainer() {
   return (
@@ -12,6 +12,7 @@ export default function MyContainer() {
         <Section1 />
         <Section2 />
       </Container>
+      <Footer />
     </>
   );
 }
