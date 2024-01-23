@@ -8,15 +8,14 @@ export default function Section2() {
         id="s2"
         className="bg-DarkViolet text-white flex justify-between h-[14rem] px-[5rem] items-center bg-[url('/bg-pattern-intro-right-desktop.svg')] bg-no-repeat "
       >
-        <Typography variant="h3" className="heading">
-          Find our more <br /> about how we work
-        </Typography>
+        <h1 className="heading text-[3rem] max-w-[30rem]">
+          Find our more about how we work
+        </h1>
         <Button
           sx={{
             color: "white",
             border: "2px solid white",
             px: "2rem",
-            py: "0.8rem",
 
             fontFamily: "karla",
           }}

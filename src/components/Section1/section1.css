@@ -3,3 +3,8 @@
 @tailwind utilities;
 @layer components {
 }
+
+#s1 {
+  @apply grid gap-y-[1.5rem];
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+}
