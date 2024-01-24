@@ -38,7 +38,7 @@ export default function Section1() {
   return (
     <>
       <article>
-        <hr className="w-[9rem] h-1 outline-none bg-red-500" />
+        <hr className="w-[9rem] h-1 outline-none bg-gray-400" />
         <h1 className="heading text-[4rem] mt-[2rem] mb-[3rem]">
           We're different
         </h1>

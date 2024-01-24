@@ -7,13 +7,18 @@ import twitter_logo from "/icon-twitter.svg";
 import pinterest_logo from "/icon-pinterest.svg";
 import instagram_logo from "/icon-instagram.svg";
 import footer_logo from "/logo.svg";
+import footer_img from "/bg-pattern-footer-desktop.svg";
 
 export default function Footer() {
-  const socialLinks: string[] = [
-    facebook_logo,
-    twitter_logo,
-    pinterest_logo,
-    instagram_logo,
+  interface socialLinks {
+    img: string;
+    label: string;
+  }
+  const socialLinks: socialLinks[] = [
+    { img: facebook_logo, label: "follow me on facebook" },
+    { img: twitter_logo, label: "follow me on twitter" },
+    { img: pinterest_logo, label: "follow me on pinterest" },
+    { img: instagram_logo, label: "follow me on instagram" },
   ];
   interface arrOfLinks_type {
     title: string;
@@ -39,8 +44,8 @@ export default function Footer() {
   ];
   return (
     <>
-      <footer className="mt-[10rem] py-[4rem]">
-        <article className="pb-[2rem] max-w-[84rem] flex justify-between mx-auto border-b-2 border-b-GrayishBlue">
+      <footer className="mt-[10rem] py-[4rem] bg-[url('/bg-pattern-footer-desktop.svg')] bg-no-repeat bg-gray-100">
+        <article className="pb-[2rem] max-w-[84rem] flex justify-between mx-auto border-b-[1px] border-b-GrayishBlue">
           <img src={footer_logo} alt="logo" />
           <Stack
             component="ul"
@@ -51,7 +56,9 @@ export default function Footer() {
             {socialLinks.map((e, i) => {
               return (
                 <li key={i}>
-                  <img src={e} alt="logo" className="cursor-pointer" />
+                  <a href="#" aria-label={e.label}>
+                    <img src={e.img} alt="logo" className="cursor-pointer" />
+                  </a>
                 </li>
               );
             })}

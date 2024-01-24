@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import { AppBar, Toolbar, Stack } from "@mui/material";
+import { AppBar, Toolbar, Stack, Button } from "@mui/material";
 import { Navbar_mobile } from "../../components";
 export const PanelContext: any = React.createContext("");
 // assets
@@ -25,9 +25,18 @@ export default function Navbar() {
                   );
                 })}
               </Stack>
-              <button className="border-2 border-VeryDarkViolet text-VeryDarkViolet uppercase px-[2rem] py-[0.5rem]">
+              <Button
+                sx={{
+                  border: "2px solid",
+                  px: "2rem",
+                  py: "0.5rem",
+                  fontFamily: "karma",
+                  fontWeight: "700",
+                }}
+                className=" !border-VeryDarkViolet !text-VeryDarkViolet  "
+              >
                 VIEW PLANS
-              </button>
+              </Button>
             </div>
           </Toolbar>
           {/* <Navbar_mobile /> */}

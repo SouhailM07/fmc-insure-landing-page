@@ -2,11 +2,20 @@ import "./hero.css";
 // mui
 import { Button } from "@mui/material";
 import img_desktop from "/image-intro-desktop.jpg";
-
+import img1 from "/bg-pattern-intro-left-desktop.svg";
+import img2 from "/bg-pattern-intro-right-desktop.svg";
 export default function Hero() {
   return (
     <>
       <article className="bg-DarkViolet text-white min-h-[35rem] flex items-center justify-center space-x-[1rem]">
+        <div className="absolute w-full flex  justify-between top-0  ">
+          <img
+            src={img1}
+            alt="img"
+            className="w-[14rem] h-[30rem]  translate-y-[30rem]"
+          />
+          <img src={img2} alt="img" className="" />
+        </div>
         <section className="w-[34rem] ">
           <hr className="mb-[4rem] w-[9rem]" />
           <h1 className="text-[4.2rem] heading leading-[4.2rem]">
